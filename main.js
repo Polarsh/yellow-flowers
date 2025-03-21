@@ -2,6 +2,7 @@ onload = () => {
   document.body.classList.remove("container");
 
   function getNameFromUrl() {
+    // Extrae la última parte de la URL (por ejemplo, /olga)
     const url = window.location.pathname;
     const name = url.substring(url.lastIndexOf("/") + 1);
     name = name.charAt(0).toUpperCase() + name.slice(1);
