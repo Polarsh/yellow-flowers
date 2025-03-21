@@ -85,7 +85,7 @@ body {
   transform: scale(0.9);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1500px) {
   .flowers {
     transform: scale(1.5); /* Ajusta la escala a 130% en dispositivos móviles y tabletas */
   }
