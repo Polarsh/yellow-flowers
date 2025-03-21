@@ -33,7 +33,7 @@ body {
 
 .text {
   position: absolute;
-  bottom: 10vh; /* Coloca el texto en la parte inferior */
+  top: 30vh; /* Coloca el texto en la parte inferior */
   font-size: 3em;
   color: #ffffff;
   font-family: 'Arial', sans-serif;
@@ -53,11 +53,11 @@ body {
 /* Animación de deslizamiento para el texto */
 @keyframes slideUp {
   0% {
-    transform: translateY(100%); /* Empieza fuera de la pantalla, abajo */
+    transform: translateY(0); /* Empieza fuera de la pantalla, abajo */
     opacity: 0; /* Comienza invisible */
   }
   100% {
-    transform: translateY(0); /* Llega a su posición original */
+    transform: translateY(100%); /* Llega a su posición original */
     opacity: 1; /* Se hace completamente visible */
   }
 }
@@ -65,14 +65,14 @@ body {
 @media (max-width: 768px) {
   .text {
     font-size: 2em;
-    bottom: 8vh; /* Ajusta la posición en dispositivos más pequeños */
+    top: 25vh; /* Ajusta la posición en dispositivos más pequeños */
   }
 }
 
 @media (max-width: 480px) {
   .text {
     font-size: 1.5em;
-    bottom: 6vh; /* Ajusta aún más en pantallas muy pequeñas */
+    top: 20vh; /* Ajusta aún más en pantallas muy pequeñas */
   }
 }
 
