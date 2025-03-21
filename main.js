@@ -13,7 +13,7 @@ onload = () => {
   const name = getNameFromUrl();
 
   if (name) {
-    const personalizedMessage = `¡Aquí tienes un ramo de flores para ti, ${name}! 🌻🌼💛`;
+    const personalizedMessage = `¡Aquí tienes unas flores para ti, ${name}! 🌻🌼💛`;
     const personalizedGreeting = `¡Hola, ${name}!`;
 
     document.getElementById("greeting").textContent = personalizedGreeting;

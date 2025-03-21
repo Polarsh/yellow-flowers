@@ -33,7 +33,7 @@ body {
 
 .text {
   position: absolute;
-  top: 30vh; /* Coloca el texto en la parte inferior */
+  top: 20vh; /* Coloca el texto en la parte inferior */
   font-size: 3em;
   color: #ffffff;
   font-family: 'Arial', sans-serif;
@@ -65,14 +65,14 @@ body {
 @media (max-width: 768px) {
   .text {
     font-size: 2em;
-    top: 25vh; /* Ajusta la posición en dispositivos más pequeños */
+    top: 15vh; /* Ajusta la posición en dispositivos más pequeños */
   }
 }
 
 @media (max-width: 480px) {
   .text {
     font-size: 1.5em;
-    top: 20vh; /* Ajusta aún más en pantallas muy pequeñas */
+    top: 10vh; /* Ajusta aún más en pantallas muy pequeñas */
   }
 }
 
@@ -83,6 +83,12 @@ body {
 .flowers {
   position: relative;
   transform: scale(0.9);
+}
+
+@media (max-width: 768px) {
+  .flowers {
+    transform: scale(1.5); /* Ajusta la escala a 130% en dispositivos móviles y tabletas */
+  }
 }
 
 .flower {
