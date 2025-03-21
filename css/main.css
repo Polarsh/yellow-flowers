@@ -31,18 +31,54 @@ body {
   background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)), radial-gradient(ellipse at bottom, var(--dark-color), rgba(145, 233, 255, 0.2)), repeating-linear-gradient(220deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(189deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), repeating-linear-gradient(148deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), linear-gradient(90deg, rgb(7, 107, 42), rgb(240, 240, 240));
 }
 
-.text{
+.text {
   position: absolute;
-  top: 20vh;
-}
-
-.text p{
-  color: white;
-  font-size: 3rem;
+  bottom: 10vh; /* Coloca el texto en la parte inferior */
+  font-size: 3em;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
   text-align: center;
-  padding: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  z-index: 10;
 
+  /* Inicialmente invisible */
+  opacity: 0; 
+
+  /* Animación para el texto */
+  animation: slideUp 1.5s ease-out forwards;
+  animation-delay: 1s; /* Retrasa la animación por 1 segundo */
 }
+
+/* Animación de deslizamiento para el texto */
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%); /* Empieza fuera de la pantalla, abajo */
+    opacity: 0; /* Comienza invisible */
+  }
+  100% {
+    transform: translateY(0); /* Llega a su posición original */
+    opacity: 1; /* Se hace completamente visible */
+  }
+}
+
+@media (max-width: 768px) {
+  .text {
+    font-size: 2em;
+    bottom: 8vh; /* Ajusta la posición en dispositivos más pequeños */
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    font-size: 1.5em;
+    bottom: 6vh; /* Ajusta aún más en pantallas muy pequeñas */
+  }
+}
+
+
+
+/* Flowers css  */
 
 .flowers {
   position: relative;
